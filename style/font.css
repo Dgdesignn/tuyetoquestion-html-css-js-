@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'OpenSans-Rular';
+    src:    url('./fonts/OpenSans-Regular.ttf') format('truetype'), 
+            local('./fonts/OpenSans-Regular.ttf') format('truetype'), ;
+}
+
+@font-face {
+    font-family: 'OpenSans-light';
+    src:    url('./fonts/OpenSans-Light.ttf') format('truetype'), 
+            local('./fonts/OpenSans-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src:    url('./fonts/Poppins-Bold.ttf') format('truetype'), 
+            local('./fonts/Poppins-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    src:    url('./fonts/Poppins-Regular.ttf') format('truetype'), 
+            local('./fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+
+
+

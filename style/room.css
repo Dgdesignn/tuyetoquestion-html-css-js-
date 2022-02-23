@@ -1,0 +1,216 @@
+#room{
+    width: min(92rem, 96%);
+    margin:0 auto;
+}
+
+
+#room header .logo img{
+    width: 100%;
+}
+
+#room header{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    width: 100%;
+    height:12rem;
+}
+
+#room header #room-buttons{
+    display: flex;
+    gap: 2rem;
+}
+
+#room header #room-buttons .button{
+    width: 15rem ;
+    height:4rem;
+    padding:1rem;
+    font-size: 1.4rem;
+}
+
+#room header #room-buttons .button> img{
+    width:1.7rem
+}
+
+h2{
+    margin-top:6.4rem;
+    font-size:2.8;
+    font-weight:700;
+}
+
+#q-box{
+    border:2px solid var(--grey-blue);
+    border-radius:.8rem;
+    overflow:hidden;
+    margin-top: 2.4rem;
+    margin-bottom:1.6rem;
+}
+#q-box textarea{
+    border: none;
+    outline:none;
+    width:100%;
+    padding:1rem;
+    background:var(--background);
+    font-size:1.6rem;
+    overflow: hidden;
+    resize: none;
+
+}
+
+#q-box textarea:focus #q-box{
+    border-color:var(--blue);
+}
+
+#q-box footer{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 1rem;
+}
+
+#q-privacity{
+    font-size:1.2rem;
+    display: flex;
+    justify-content:center;
+    gap:1rem;
+    color:var(--grey-dark)
+}
+
+#q-box button{
+    width:9.8rem;
+    height:4rem;
+    font-size:1.2rem;
+}
+
+/*Questions box*/
+#questions .question-wrapper{
+    position:relative;
+    width:100%;
+    min-height: 13.6rem;
+
+    padding: 2.4rem;
+
+    background-color:var(--light-blue);
+    border-radius:.8rem;
+    font-size:1.4rem;
+    margin-bottom: .8rem;
+    
+
+}
+
+#questions .question-wrapper .question-content{
+    display: flex;
+    align-items:center;
+    gap: 1.6rem;
+}
+
+#questions .question-wrapper .actions-button{
+    float: right;
+    display: flex;
+    gap: 2rem;
+}
+
+#questions .question-wrapper .actions-button a{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--black);
+    transition: background-color .3s ease-in-out;
+    padding:1rem;
+    border-radius: .8rem;
+}
+
+#questions .question-wrapper .actions-button a:hover{
+    background-color: var(--grey-blue);
+   
+}
+
+
+#questions .question-wrapper .user {
+    width:5.2rem; 
+    height:5.2rem;
+    background:var(--blue);
+
+    display: flex;
+    justify-content:center;
+    align-items:center;
+
+    clip-path: circle();
+
+}
+
+/*question box readed*/
+#questions .question-wrapper.readed{
+    background: var(--grey-dark-opacity);
+    
+}
+
+#questions .question-wrapper.readed .user{
+    background: var(--grey-blue)
+}
+
+
+/*modal*/
+
+.modal{
+    background-color: rgba(4, 9, 17,.8);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+
+    opacity: 0;
+    visibility: hidden;
+  
+}
+
+.modal.show{
+    opacity: 1;
+    visibility: visible
+}
+
+.modal .modal-content{
+    background-color: var(--white);
+    width:min(59rem, 96%);
+    height: 36.2rem;
+    border-radius:.8rem;
+    color: var(--grey);
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+
+.modal .modal-content h2{
+    margin-top:0;
+    font-weight: 700;
+}
+
+.modal .modal-content p{
+    margin: 1.8rem 0;
+}
+
+.modal .modal-content  form{
+    width: min(30.2rem, 96%);
+}
+
+.modal .modal-content  form .buttons{
+    display:flex;
+    gap: .8rem;
+    margin-top:2rem;
+}
+
+.modal .modal-content  form .buttons .button-outline{
+    border: none;
+    background: var(--grey-light);
+    color: var(--grey);
+}
+
+.modal .modal-content  form .buttons .button-solid{
+    color: var(--white);
+    background: var(--red);
+}

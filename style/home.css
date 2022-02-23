@@ -1,0 +1,130 @@
+.content{
+    display: grid;
+    grid-template-columns: 56% 40%;
+    grid-template-rows: 11.4rem 1fr;
+
+    grid-template-areas: 
+        'header header'
+        'left right';
+} 
+
+.content header{
+    grid-area: header;
+    display:flex;
+    align-items:center;
+    width: 80%;
+    height:8rem;
+    margin: 0 auto;
+}
+
+ header .logo{
+    width:12.5rem;
+}
+
+.content header .logo> img{
+    width:100%;
+}
+
+#bg{
+    grid-area: left;
+    background: url('../assets/image/Ilustração.svg') no-repeat top/contain;
+    background-position: 0%;
+    background-size: main(60rem, 68%);
+    height:85vh;
+
+}
+
+
+ .ball{
+    width:40rem;
+    height: 40rem;
+    background:var(--blue);
+    position:fixed;
+   
+    clip-path: circle();
+    opacity: 0.1;
+}
+
+
+.ball-top{
+    top: -24rem;
+    right: -24rem;
+}
+
+#bg .ball-bottom{
+    bottom: -26rem;
+    right: 10rem;
+
+    width:30rem;
+    height:30rem;
+}
+
+main{
+    grid-area: right;
+    display: flex;
+    justify-content: center;
+    margin-top:5rem;
+}
+
+main .container {
+    width:min(36.3rem,100%);
+  
+}
+
+
+
+main h2{
+    font-family: Poppins, sans-serif;
+    color: var(--black);
+    margin-bottom:1rem;
+    font-size: clamp(20px, 5vw, 2.8rem);
+}
+
+input{
+    border: 2px solid var(--grey-blue);
+    padding: 1.3rem;
+    width: min(36rem, 100%);
+    margin:0.9rem 0;
+}
+
+button{
+    color: var(--white);
+
+}
+.separator{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: min(36rem, 100%);
+
+    margin-top:5.3rem;
+    margin-bottom:2.8rem;
+
+    color: var(--grey-blue)
+}
+
+.s-left,
+.s-right{
+
+    background-color: var(--grey-blue);
+    padding:1px;
+    width:15.6rem;
+    
+}
+
+section h2{
+    width: min(36rem, 100%);
+    margin: 2.4rem 0;
+}
+
+
+/*create-pass*/
+main #container {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
+#create-pass{
+    margin-top:-10rem;
+}

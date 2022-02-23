@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuyeto.q | Room</title>
+    <link rel="stylesheet" href="./style/global.css">
+    <link rel="stylesheet" href="./style/room.css">
+</head>
+<body>
+    <div id="room">
+        <header>
+            <div class="logo">
+                <img src="./assets/image/logo.svg" alt="logo">
+            </div>
+            <div id="room-buttons">
+                <a href="#" class="button-outline button">
+                    #3949
+                    <img src="./assets/image/copy-white.svg" alt="">
+                </a>
+               
+                <a href="#" class="button-solid button">
+                    <img src="./assets/image/users-white.svg" alt="">
+                    Criar sala
+                </a>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <label for="question">
+                    <h2>Faça sua pergunra</h2>
+                </label>
+                <form action="#" id="q-box">
+                    <textarea name="question" id="question" cols="30" rows="3" placeholder="Qual é a sua pergunta?"></textarea>
+
+
+                    <footer>
+                        <div id="q-privacity">
+                            <label for="question">
+                                <img src="./assets/image/lock_black_24dp.svg" alt="" srcset="">
+                            </label>
+                            <label for="question">
+                                <p>Esta pergunta é anônima</p>
+                            </label>
+                        </div>
+                        <button class="button-solid">Perguntar</button>
+                    </footer>
+                </form>
+                <div id="questions">
+                    <!----box questions-->
+                    <div class="question-wrapper ">
+                        <!----question content-->
+                        <div class="question-content">
+                            <div class="user">
+                                <img src="./assets/image/users-white.svg" alt="avatar">
+                            </div>
+                            <div class="questions">
+                                <p>Qual é a diferença entre let e var no javascript</p>
+                            </div>
+                        </div>
+                        <!----action buttons-->
+                        <div class="actions-button">
+                            <a href="" class="checked-button">
+                                <img src="./assets/image/check.svg" alt="icon de marcação" >
+                                Marcar como lida
+                            </a>
+                            <a href="" class="trash-button">
+                                <img src="./assets/image/trash.svg" alt="icon de lixeira" >
+                                Eliminar
+                            </a>
+                        </div>
+                    </div>
+
+                    <!----box questions readed-->
+                    <div class="question-wrapper readed">
+                        <!----question content-->
+                        <div class="question-content">
+                            <div class="user">
+                                <img src="./assets/image/users-white.svg" alt="avatar">
+                            </div>
+                            <div class="questions">
+                                <p>O que é Javascript?</p>
+                            </div>
+                        </div>
+                        <!----action buttons-->
+                        <div class="actions-button">
+                            
+                            <a href="" class="trash-button">
+                                <img src="./assets/image/trash.svg" alt="icon de lixeira" >
+                                Eliminar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+    <div class="modal show">
+        <div class="modal-content">
+            <h2>Excluir pergunta</h2>
+            <p>Tu tens certeza que deseja excluir esta pergunta?</p>
+            <form action="#">
+                <input type="number" placeholder="Insere a senha da sala" name="roomPass">
+                <div class="buttons">
+                    <a href="#" class="button-outline">Cancelar</a>
+                    <a href="#" class="button-solid">Exluir</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

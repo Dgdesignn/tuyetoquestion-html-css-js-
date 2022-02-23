@@ -1,0 +1,3 @@
+#` TUYETO QUESTION LAYOUT`
+---
+It is a (LAYOUT) question and answer application during a lecture.

@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+    --black:#0D114F;
+    --white:#FAFAFA;
+    --red:#E83F5B;
+    --blue:#3485FF;
+    --light-blue:#E0ECFF;
+    --background:#F6FAFF;
+    --overlay:#040911;
+    --icons-details:#A5B0C1;
+
+    --grey-blue:#A1B2CD;
+    --grey-dark-opacity:#4D5E7720;
+    --grey-light:#E5EAF1;
+
+    font-size: 62.5%;
+
+}
+
+header .logo{
+    width:12.5rem;
+}
+
+
+h2{
+    font-size:2.8rem
+}
+
+
+body{
+    display:flex;
+    height: 100vh;
+    background:var(--background);
+}
+
+body, button, input, select, textarea{
+    font-family:'Open Sans', Sans-serif;
+    font-size: clamp(14px, 1.6rem, 2vw);
+}
+
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.content{
+    width: 100%;
+    margin: 0 auto;
+}
+
+input{
+    border: 2px solid var(--grey-blue);
+    padding: 1.3rem;
+    width: min(36rem, 100%);
+    margin:0.9rem 0;
+}
+
+input, button, .button-solid{
+    border-radius: 0.8rem;
+}
+
+.button-outline{
+    border-radius: 0.8rem;
+    padding:1.3rem;
+    width: min(36rem, 100%);
+    background:var(--white);
+    border:.2rem solid var(--blue);
+    cursor:pointer;
+    margin: .9rem 0;
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 500;
+    transition: filter .2s ease-in-out;
+    color: var(--blue);
+}
+
+button> img,.button-solid> img, .button-solid> img{
+    width: 2rem
+}
+
+button, .button-solid{
+    padding:1.3rem;
+    width: min(36rem, 100%);
+    background:var(--blue);
+    border:none;
+    cursor:pointer;
+    margin: .9rem 0;
+    color: var(--white);
+
+    display: flex;
+    justify-content:center;
+    gap: 1rem;
+    font-weight: 500;
+    align-items: center;
+    transition: filter .2s ease-in-out;
+}
+
+
+.button-solid:hover,
+.button-outline:hover,
+button:hover{
+    filter: brightness(1.1);
+}
+
+
+.sr-only{
+    width: 1px;
+    height:1px;
+    position: absolute;
+    margin: -1px;
+    padding:0;
+    overflow: hidden;
+    white-space: nowrap;
+    border-width: 0;
+    clip-path: rect(0, 0, 0, 0);
+}
+
